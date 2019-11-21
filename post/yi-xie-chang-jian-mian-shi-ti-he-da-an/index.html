@@ -1,0 +1,824 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>一些常见面试题和答案 | LAVENDER</title>
+<meta name="description" content="测试用小站" />
+<link rel="shortcut icon" href="https://waningmay.github.io/favicon.ico?v=1574331776584">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://waningmay.github.io/styles/main.css">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://waningmay.github.io">
+  <img class="avatar" src="https://waningmay.github.io/images/avatar.png?v=1574331776584" alt="">
+  </a>
+  <h1 class="site-title">
+    LAVENDER
+  </h1>
+  <p class="site-description">
+    测试用小站
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              一些常见面试题和答案
+            </h2>
+            <div class="post-info">
+              <span>
+                2019-11-21
+              </span>
+              <span>
+                23 min read
+              </span>
+              
+                <a href="https://waningmay.github.io/tag/_-wu1R0LS" class="post-tag">
+                  # 杂谈
+                </a>
+              
+            </div>
+            
+              <img class="post-feature-image" src="https://waningmay.github.io/post-images/yi-xie-chang-jian-mian-shi-ti-he-da-an.jpg" alt="">
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <hr>
+<h2 id="title-一些常见面试题和答案date-2019-11-16-231010categories-专业tags-杂谈toc-true">title: 一些常见面试题和答案<br>
+date: 2019-11-16 23:10:10<br>
+categories: 专业<br>
+tags: 杂谈<br>
+toc: true</h2>
+<blockquote>
+<p>本文献给跟我一样虽然屁都不会但是谜一样的自信地投了软开岗位的旁友们</p>
+<p>希望我们都能获得尘世间的幸福</p>
+</blockquote>
+<!-- more -->
+<h3 id="1-茴字有几种写法排序啦是排序">1. 茴字有几种写法（排序啦是排序</h3>
+<p>参考<a href="https://www.cnblogs.com/fnlingnzb-learner/p/9374732.html">Boblim的博客</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">排序方法</th>
+<th style="text-align:center">时间复杂度（平均）</th>
+<th style="text-align:center">空间复杂度</th>
+<th style="text-align:center">稳定性</th>
+<th style="text-align:left">原理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">冒泡</td>
+<td style="text-align:center">O(n²)</td>
+<td style="text-align:center">O(1)</td>
+<td style="text-align:center">稳定</td>
+<td style="text-align:left">在扫描过程中两两比较相邻记录，如果反序则交换，最终，最大记录就被“沉到”了序列的最后一个位置，第二遍扫描将第二大记录“沉到”了倒数第二个位置，重复上述操作，直到n-1 遍扫描后，整个序列就排好序了。</td>
+</tr>
+<tr>
+<td style="text-align:center">插入</td>
+<td style="text-align:center">O(n²)</td>
+<td style="text-align:center">O(1)</td>
+<td style="text-align:center">稳定</td>
+<td style="text-align:left">对于一个数组A[0,n]的排序问题，假设认为数组在A[0,n-1]排序的问题已经解决了。 考虑A[n]的值，从右向左扫描有序数组A[0,n-1]，直到第一个小于等于A[n]的元素，将A[n]插在这个元素的后面。</td>
+</tr>
+<tr>
+<td style="text-align:center">归并</td>
+<td style="text-align:center">O(nlogn)</td>
+<td style="text-align:center">O(n)</td>
+<td style="text-align:center">稳定</td>
+<td style="text-align:left">采用经典的<strong>分治</strong>（divide-and-conquer）策略（分治法将问题<strong>分</strong>(divide)成一些小的问题然后递归求解，而**治(conquer)**的阶段则将分的阶段得到的各答案&quot;修补&quot;在一起，即分而治之)。</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:center">选择</td>
+<td style="text-align:center">O(n²)</td>
+<td style="text-align:center">O(1)</td>
+<td style="text-align:center">不稳定</td>
+<td style="text-align:left">初始时在序列中找到最小（大）元素，放到序列的起始位置作为已排序序列；然后，再从剩余未排序元素中继续寻找最小（大）元素，放到已排序序列的末尾。以此类推，直到所有元素均排序完毕。</td>
+</tr>
+<tr>
+<td style="text-align:center">希尔</td>
+<td style="text-align:center">O(nlogn)</td>
+<td style="text-align:center">O(1)</td>
+<td style="text-align:center">不稳定</td>
+<td style="text-align:left">希尔排序也是一种插入排序，它是简单插入排序经过改进之后的一个更高效的版本，也称为缩小增量排序，把记录按下标的一定增量分组，对每组使用直接插入排序算法排序；随着增量逐渐减少，每组包含的关键词越来越多，当增量减至1时，整个文件恰被分成一组，算法便终止。</td>
+</tr>
+<tr>
+<td style="text-align:center">堆排</td>
+<td style="text-align:center">O(nlogn)</td>
+<td style="text-align:center">O(1)</td>
+<td style="text-align:center">不稳定</td>
+<td style="text-align:left">利用堆的性质来进行排序的</td>
+</tr>
+<tr>
+<td style="text-align:center">快排</td>
+<td style="text-align:center">O(nlogn)</td>
+<td style="text-align:center">O(nlogn)</td>
+<td style="text-align:center">不稳定</td>
+<td style="text-align:left">选一个数作为基准，双指针分别从前后两端遍历数组，当后指针比基准小且前指针比基准大时交换，直到相遇。把相遇位置的数与基准数做交换，继续快排二分后的两个数组。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>稳定</strong>：如果a原本在b前面，而a=b，排序之后a仍然在b的前面。</p>
+<p><strong>不稳定</strong>：如果a原本在b的前面，而a=b，排序之后 a 可能会出现在 b 的后面。</p>
+<p><strong>时间复杂度</strong>：对排序数据的总的操作次数。反映当n变化时，操作次数呈现什么规律。</p>
+<p>**空间复杂度：**是指算法在计算机内执行时所需存储空间的度量，它也是数据规模n的函数。</p>
+<p><strong>冒泡</strong>应该是讲的最多的？底下有个大概示意</p>
+<h5 id="例题冒泡">例题：冒泡</h5>
+<blockquote>
+<p>int i , j;</p>
+<p>for (i = 0; i &lt; len; i++){</p>
+<p>​    for (j = 0; j &lt; len - i -1; j++){</p>
+<p>​        if (arr[j+1] &lt; arr[j]){</p>
+<p>​            swap(arr[j], arr[j+1]); } }}</p>
+</blockquote>
+<p>理解了冒泡那么插入和选择也都很好理解和记忆</p>
+<p>稍微进阶一点的记住<strong>快排</strong>的原理和实现</p>
+<h5 id="例题快排实现">例题：快排实现</h5>
+<blockquote>
+<p>要点是选一个 前后各一个指针和它比大小</p>
+<p>class Solution {</p>
+<p>public:</p>
+<p>void sort(vector<int>&amp; nums, int start, int end){</p>
+<p>​	if (start &gt; end){</p>
+<p>​		return; }</p>
+<p>​    int temp = nums[start];</p>
+<p>​    int i = start;</p>
+<p>​    int j = end;</p>
+<p>​    while (i != j){</p>
+<p>​        while (nums[j] &gt;= temp &amp;&amp; i &lt; j){</p>
+<p>​          j--; }</p>
+<p>​        while (nums[i] &lt;= temp &amp;&amp; i &lt; j){</p>
+<p>​          i++; }</p>
+<p>​        if (i &lt; j){</p>
+<p>​          int p = nums[i];</p>
+<p>​          nums[i] = nums[j];</p>
+<p>​          nums[j] = p; }</p>
+<p>​     }</p>
+<p>​    nums[start] = nums[i];</p>
+<p>​    nums[i] = temp;</p>
+<p>​    sort(nums,start,i-1);</p>
+<p>​    sort(nums,i+1,end);</p>
+<p>}</p>
+<p>vector<int> sortArray(vector<int>&amp; nums) {</p>
+<p>​    int start = 0;</p>
+<p>​    int end = nums.size()-1;</p>
+<p>​    sort(nums,start,end);</p>
+<p>​    return nums;</p>
+<p>}</p>
+<p>};</p>
+</blockquote>
+<p><strong>堆排</strong>也很重要但是我没记住（ntm</p>
+<blockquote>
+<p>预留空位等我搞懂了再放</p>
+</blockquote>
+<p>一个非常简陋的时间和空间复杂度计算方法</p>
+<blockquote>
+<p>时间复杂度： 一层for循环就是n的一次方，两层嵌套就是n²，只算最高次的。用了二分法的就跟log有关系。</p>
+<p>空间复杂度：用了额外空间就不是O(1)了，具体多少就看开了多少内存。</p>
+</blockquote>
+<h3 id="2-数据结构">2. 数据结构</h3>
+<h5 id="例题-c中的容器都有哪些map如何实现红黑树是什么">例题： C++中的容器都有哪些？map如何实现？红黑树是什么？</h5>
+<p><strong>顺序容器</strong>：顺序容器有以下三种：可变长动态数组 vector、双端队列 deque、双向链表 list。</p>
+<p><strong>关联容器</strong>：关联容器有以下四种：set、multiset、map、multimap。关联容器内的元素是排序的。插入元素时，容器会按一定的排序规则将元素放到适当的位置上，因此插入元素时不能指定位置。</p>
+<p>除了以上两类容器外，STL 还在两类容器的基础上屏蔽一部分功能，突出或增加另一部分功能，实现了三种<strong>容器适配器</strong>：栈 stack、队列 queue、优先级队列 priority_queue。</p>
+<p>所有容器都有以下两个成员函数：</p>
+<ul>
+<li>int size()：返回容器对象中元素的个数。</li>
+<li>bool empty()：判断容器对象是否为空。</li>
+<li>begin()：返回指向容器中第一个元素的迭代器。</li>
+<li>end()：返回指向容器中最后一个元素后面的位置的迭代器。</li>
+<li>rbegin()：返回指向容器中最后一个元素的反向迭代器。</li>
+<li>rend()：返回指向容器中第一个元素前面的位置的反向迭代器。</li>
+<li>erase(...)：从容器中删除一个或几个元素。该函数参数较复杂，此处省略。</li>
+<li>clear()：从容器中删除所有元素。</li>
+<li>front()：返回容器中第一个元素的引用。</li>
+<li>back()：返回容器中最后一个元素的引用。</li>
+<li>push_back()：在容器末尾增加新元素。</li>
+<li>pop_back()：删除容器末尾的元素。</li>
+<li>insert(...)：插入一个或多个元素。该函数参数较复杂，此处省略。</li>
+</ul>
+<p>要访问顺序容器和关联容器中的元素，需要通过“迭代器（iterator）”进行。迭代器是一个变量，相当于容器和操纵容器的算法之间的中介。迭代器可以指向容器中的某个元素，通过迭代器就可以读写它指向的元素。从这一点上看，迭代器和指针类似。</p>
+<p>容器类名::iterator 迭代器名;    //正向迭代器</p>
+<p>容器类名::reverse_iterator 迭代器名;    //反向迭代器</p>
+<ul>
+<li>advance(p, n)：使迭代器 p 向前或向后移动 n 个元素。</li>
+<li>dis<a href="http://c.biancheng.net/ref/tan.html">tan</a>ce(p, q)：计算两个迭代器之间的距离，即迭代器 p 经过多少次 + + 操作后和迭代器 q 相等。如果调用时 p 已经指向 q 的后面，则这个函数会陷入死循环。</li>
+<li>iter_swap(p, q)：用于交换两个迭代器 p、q 指向的值。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>容器</th>
+<th>迭代器功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vector</td>
+<td>随机访问</td>
+</tr>
+<tr>
+<td>deque</td>
+<td>随机访问</td>
+</tr>
+<tr>
+<td>list</td>
+<td>双向</td>
+</tr>
+<tr>
+<td>set / multiset</td>
+<td>双向</td>
+</tr>
+<tr>
+<td>map / multimap</td>
+<td>双向</td>
+</tr>
+<tr>
+<td>stack</td>
+<td>不支持迭代器</td>
+</tr>
+<tr>
+<td>queue</td>
+<td>不支持迭代器</td>
+</tr>
+<tr>
+<td>priority_queue</td>
+<td>不支持迭代器</td>
+</tr>
+</tbody>
+</table>
+<p>map以模板（泛型）方式实现，可以存储任意类型的数据，包括使用者自定义的数据类型。主要用于资料一对一映射的情况，map内部的实现过程是自建一棵红黑树，这棵树具有对数据自动排序的功能。在map内部所有数据都是有序的。</p>
+<h4 id="数组-链表和列表">数组、链表和列表</h4>
+<p>数组的内存空间是连续的，链表在内存空间内是离散的</p>
+<h5 id="例题反转数组链表">例题：反转数组/链表</h5>
+<p>变种包括k个一组反转链表，从m-n反转链表，两两反转链表均可leetcode刷题</p>
+<blockquote>
+<p>反转数组：reverse；双指针交换</p>
+<p>反转链表：指针前中后，换指向</p>
+</blockquote>
+<h4 id="栈stack-堆heap和队列queue">栈stack、堆heap和队列queue</h4>
+<p>堆是priorityQueue</p>
+<p><a href="http://c.biancheng.net/view/396.html">堆和队列辨析</a> + <a href="http://c.biancheng.net/view/393.html">C++中栈的用法</a></p>
+<h5 id="例题括号匹配栈的应用堆排序堆的应用">例题：括号匹配（栈的应用），堆排序（堆的应用），</h5>
+<h5 id="例题两个栈做一个队列">例题：两个栈做一个队列</h5>
+<p>思路：入队列是把需要存的元素插入栈1；出队列是pop栈2中的元素，把栈1中的元素依次插入栈2（注意这一步栈2必须为空），pop栈2中的元素。</p>
+<h5 id="例题两个队列做一个栈">例题：两个队列做一个栈</h5>
+<p>思路：出栈，把元素依次尾插入队列1；把前序元素全头删然后尾插到队列2，把最后一个元素pop掉，以此类推。新插入的元素尾插在原本的队列后面，成为下一次最先被pop掉的。插入原则：保证一个队列为空，一个队列不为空，往不为空的队列中插入元素。</p>
+<h4 id="树-二叉树-红黑树-搜索树">树、二叉树、红黑树、搜索树</h4>
+<p>树：</p>
+<p>二叉树：一个父节点有两个子节点</p>
+<p>红黑树：</p>
+<p>搜索树：有序排列的树</p>
+<h4 id="哈希表hashmap的原理">哈希表hashmap的原理</h4>
+<p>这玩意我觉得非常之坑，用起来稀里糊涂的，但是消除时间复杂度又很好用显得你很专业</p>
+<h5 id="例题two-sum">例题：Two Sum</h5>
+<blockquote>
+<p>class Solution {</p>
+<p>public:</p>
+<p>vector<int> twoSum(vector<int>&amp; nums, int target) {<br>
+​    map&lt;int,int&gt; mp;<br>
+​    vector<int> a(2,-1);<br>
+​    int i = 0;</p>
+<p>​    for (i = 0; i &lt; nums.size(); i++){<br>
+​      mp.insert(pair&lt;int,int&gt;(nums[i],i));</p>
+<p>​      if ((mp.count(target - nums[i]) &gt; 0) &amp;&amp; (mp[target-nums[i]]) != i){<br>
+​        a[1] = i;<br>
+​        a[0] = mp[target-nums[i]];<br>
+​      }</p>
+<p>​    }<br>
+​    return a;<br>
+}<br>
+};</p>
+</blockquote>
+<h5 id="例题lru缓存机制">例题：LRU缓存机制</h5>
+<blockquote>
+<p>class LRUCache {</p>
+<p>public:</p>
+<p>struct CacheNode {<br>
+​    int key;<br>
+​    int value;<br>
+​    CacheNode *pre, *next;<br>
+​    CacheNode(int key, int value): key(key),value(value),pre(NULL),next(NULL){}<br>
+};</p>
+<p>map&lt;int, CacheNode*&gt; mp;<br>
+CacheNode *head, *tail;<br>
+int size;</p>
+<p>LRUCache(int capacity) {<br>
+​    size = capacity;<br>
+​    head = NULL;<br>
+​    tail = NULL;<br>
+}</p>
+<p>void remove(CacheNode* p){<br>
+​    if (p-&gt;pre != NULL) {<br>
+​      p-&gt;pre-&gt;next = p-&gt;next;<br>
+​    } else {<br>
+​      head = p-&gt;next;<br>
+​    }<br>
+​    if (p-&gt;next != NULL) {<br>
+​      p-&gt;next-&gt;pre = p-&gt;pre;<br>
+​    } else {<br>
+​      tail = p-&gt;pre;<br>
+​    }<br>
+}</p>
+<p>void setHead(CacheNode*p){<br>
+​    p-&gt;next = head;<br>
+​    p-&gt;pre = NULL;<br>
+​    if (head != NULL){<br>
+​      head-&gt;pre = p;<br>
+​    }<br>
+​    head = p;<br>
+​    if (tail == NULL){<br>
+​      tail = head;<br>
+​    }<br>
+}</p>
+<p>int get(int key) {<br>
+​    map&lt;int,CacheNode*&gt;::iterator it = mp.find(key);<br>
+​    if (it != mp.end()){<br>
+​      CacheNode* p = it-&gt;second;<br>
+​      remove(p);<br>
+​      setHead(p);<br>
+​      return p-&gt;value;<br>
+​    } else {<br>
+​      return -1;<br>
+​    }<br>
+}</p>
+<p>void put(int key, int value) {<br>
+map&lt;int,CacheNode*&gt;::iterator it = mp.find(key);<br>
+if (it != mp.end()){<br>
+CacheNode* p = it-&gt;second;<br>
+p-&gt;value = value;<br>
+remove(p);<br>
+setHead(p);<br>
+} else {<br>
+CacheNode <em>q = new CacheNode(key,value);<br>
+if(mp.size() &gt;= size){<br>
+map&lt;int,CacheNode</em>&gt;::iterator it2 = mp.find(tail-&gt;key);<br>
+remove(tail);<br>
+mp.erase(it2);<br>
+}<br>
+setHead(q);<br>
+mp[key] = q;<br>
+}<br>
+}<br>
+};</p>
+</blockquote>
+<h3 id="3-编程基础">3. 编程基础</h3>
+<h4 id="概念辨析">概念辨析</h4>
+<h5 id="多态类的多态和函数的多态">多态：类的多态和函数的多态</h5>
+<p>一个实体同时具备多种形式，在特定情况下，表现不同的状态，对应不同的属性和方法。C++中主要体现在运行和编译两个方面。C中通过钩子函数挂接才能达成同样的效果。</p>
+<p>C++中主要通过虚函数实现，也可以通过抽象类、覆盖（重写）、模板。（重载和多态无关）</p>
+<h5 id="封装">封装：</h5>
+<p>将抽象的道德数据和行为或功能相结合，形成有机整体“类”，数据和函数都是类的成员。</p>
+<p>封装增强了安全性，简化了编程。</p>
+<h5 id="重载和重写">重载和重写：</h5>
+<p>重载overloading：不同的函数，相同的函数名不同的参数个数或者类型。调用的时候根据参数来区别。对权限没有要求。</p>
+<p>重写overriding（覆盖）：在派生类中重新对基类中的<strong>虚函数</strong>重新实现。函数名和参数都一样，只是函数的实现体不一样。调用的时候根据对象的类型来区别。被重写的方法不能拥有比父类更严格的权限。</p>
+<p>重写是子类和父类之间的关系，是垂直关系，发生在继承中。重载是同一个类中的方法之间的关系，是水平关系，发生在一个类中。</p>
+<h5 id="虚函数">虚函数：</h5>
+<p>用virtual关键字申明的函数，虚函数一定是类的成员函数。<a href="c.biancheng.net/view/2294.html">虚函数理解教程</a></p>
+<p>纯虚函数是虚函数再加上=0</p>
+<p>纯虚函数：virtual void fun()=0;即抽象类，必须在子类中实现这个函数，即先有名称，没有内容，在派生类实现内容。</p>
+<h5 id="继承派生">继承派生：</h5>
+<h5 id="闭包-垃圾回收">闭包、垃圾回收：</h5>
+<p>java中的概念 不懂</p>
+<h5 id="例题多集成中派生类对象结构">例题：多集成中派生类对象结构</h5>
+<h5 id="例题虚函数表构成">例题：虚函数表构成</h5>
+<p>存在虚函数的类都有一个一维的虚函数表叫做虚表，类的对象有一个指向虚表开始位置的虚指针。虚表和类对应，虚表指针和对象对应。</p>
+<h5 id="例题虚函数实现多态的原理">例题：虚函数实现多态的原理</h5>
+<p>在基类函数前加上virtual关键字，在派生类中重写该函数，运行时根据对象的实际类型来调用相应函数。如果对象类型是派生类，那么就调用派生类的函数，如果对象类型是基类，那么就调用基类的函数。</p>
+<h5 id="例题构造函数可以定义为私有吗">例题：构造函数可以定义为私有吗？</h5>
+<p>将构造函数声明为私有,可以确保本类以外的地方都不能实例化这个类 。</p>
+<p>标准的单例模式就是构造函数私有。</p>
+<blockquote>
+<p>class A{<br>
+private:<br>
+A() {}<br>
+static A a;<br>
+public:<br>
+static A&amp; Instance() { return a; }<br>
+};</p>
+</blockquote>
+<h4 id="编程语言的区别">编程语言的区别</h4>
+<h5 id="javaccscala">JAVA/C/C++/SCALA</h5>
+<p>C是面向过程的。JAVA和C++是面向对象的。SCALA比较新。</p>
+<h5 id="面向对象编程与函数式编程">面向对象编程与函数式编程</h5>
+<p>面向对象编程：<strong>封装、继承、多态</strong>；相对于面向过程而言的</p>
+<p>基于对象编程：支持类但不支持多态，不提供抽象、继承和重载等有关面向对象语言的功能。</p>
+<h5 id="例题-c弱指针智能指针weak_ptr">例题： C++弱指针，智能指针weak_ptr</h5>
+<p>STL提供的智能指针一共有四种：auto_ptr(已经淘汰)、unique_ptr、shared_ptr和weak_ptr。</p>
+<p>unique_ptr：</p>
+<p>shared_ptr：</p>
+<p>weak_ptr：是一个引用计数型智能指针，不增加对象的引用计数，即弱引用。弱引用并不修改该对象的引用计数，这意味着弱引用并不对对象的内存进行管理，只要把循环引用的乙方使用弱引用即可解除循环引用。</p>
+<p>strong_ptr是强引用，只要有一个指向对象的shared_ptr存在，该对象就不会被析构，直到指向对象的最后一个shared_ptr析构或是reset()时才会被销毁。利用weak_ptr可以解决常见的空悬指针问题以及循环引用问题。</p>
+<h3 id="4-操作系统">4. 操作系统</h3>
+<h4 id="进程和线程一个进程可能包括多个线程">进程和线程：一个进程可能包括多个线程</h4>
+<p>线程是操作系统能够进行运算调度的最小单位，它被包含在进程之中，是进程中的实际运作单位，可以使用多线程对进行运算提速。</p>
+<h4 id="进程之间通信">进程之间通信：</h4>
+<p>管道：半双工；只用于具有亲缘关系的进程；特殊的文件，可以read、write但只存在内存中；速度慢，容量有限</p>
+<p>FIFO：命名管道；任何进程间都能通讯，但速度慢</p>
+<p>socket：</p>
+<p>消息队列：消息队列，是消息的链接表，存放在内核中。一个消息队列由一个标识符（即队列ID）来标识；         容量受到系统限制，且要注意第一次读的时候，要考虑上一次没有读完数据的问题</p>
+<p>信号量：不能传递复杂消息，只能用来同步</p>
+<p>共享内存区：能够很容易控制容量，速度快，但要保持同步，比如一个进程在写的时候，另一个进程要注意读写的问题，相当于线程中的线程安全，当然，共享内存区同样可以用作线程间通讯，不过没这个必要，线程间本来就已经共享了同一进程内的一块内存</p>
+<h5 id="例题线程如何创建如何实现互斥线程池怎么创建有几个线程都执行一个函数吗">例题：线程如何创建？如何实现互斥？线程池怎么创建？有几个线程？都执行一个函数吗？</h5>
+<p>有两种常见的创建线程的方法，一种是继承Thread类，一种是实现Runnable的接口，Thread类其实也是实现了Runnable接口。但是创建这两种线程在运行结束后都会被虚拟机销毁，如果线程数量多的话，频繁的创建和销毁线程会大大浪费时间和内存，因为线程执行完毕后死亡，线程对象变成垃圾。使用线程池可以让线程运行完后不立即销毁而是重复使用，继续执行其他的任务。参考<a href="https://www.cnblogs.com/zzuli/p/9386463.html">执棋手的博客</a></p>
+<p>C++中的多线程类Thread。头文件为#include<thread>,通过std::thread应用。</p>
+<p>构造函数 ThreadPool()：</p>
+<p>开启一定数量的线程，每开启一个线程，让该线程进入死循环，对接下来的操作，先利用互斥锁先加锁，再利用条件锁判断线程任务列表是否为空，若为空即阻塞该线程（就是没人办理业务时进入待机状态）。接下来，从任务列表中取任务，然后解开互斥锁，让其执行完后再重复以上操作。对于开启的每一个线程都是如此。</p>
+<p>添加任务函数 enqueue()：</p>
+<p>先获取任务，加互斥锁，将该任务加入任务列表，解锁，然后唤醒一个任务，让其进行等待。</p>
+<p>析构函数 ~ThreadPool()：</p>
+<p>唤醒所有的工作，让线程一个个的执行。</p>
+<h5 id="例题在windows的一个磁盘下新建文件夹的系统操作过程">例题：在Windows的一个磁盘下新建文件夹的系统操作过程</h5>
+<h5 id="例题在linux系统中如果已知一个进程名怎么输出pid号-ps和top命令">例题：在Linux系统中如果已知一个进程名，怎么输出PID号？ （ps和top命令？</h5>
+<blockquote>
+<p>ps -ef |grep &quot;name&quot; | grep -v grep</p>
+</blockquote>
+<blockquote>
+<p>ps -ef | awk '/[n]ame/{print $2}'</p>
+</blockquote>
+<blockquote>
+<p>ps -x | awk '/[n]ame/{print $2}'</p>
+</blockquote>
+<blockquote>
+<p>pgrep -f name</p>
+</blockquote>
+<h5 id="例题linux的进程调度">例题：Linux的进程调度</h5>
+<p>在处理器资源有限的系统中，所有进程都以轮流占用处理器的方式交叉运行。为使每个进程都有运行的机会，调度器为每个进程分配了一个占用处理器的时间额度，这个额度叫做进程的“时间片”，其初值就存放在进程控制块的counter域中。进程每占用处理器一次，系统就将这次所占用时间从counter中扣除，因为counter反映了进程时间片的剩余情况，所以叫做剩余时间片。</p>
+<p>Linux调度的主要思想为：调度器大致以所有进程时间片的总和为一个调度周期；在每个调度周期内可以发生若干次调度，每次调度时，所有进程都以counter为资本竞争处理器控制权，counter值大者胜出，优先运行；凡是已耗尽时间片（即counter=0）的，则立即退出本周期的竞争；当所有未被阻塞进程的时间片都耗尽，那就不等了。然后，由调度器重新为进程分配时间片，开始下一个调度周期。</p>
+<p>目前，标准Linux系统支持非实时（普通）和实时两种进程。与此相对应的，Linux有两种进程调度策略：普通进程调度和实时进程调度。因此，在每个进程的进程控制块中都有一个域policy，用来指明该进程为何种进程，应该使用何种调度策略。</p>
+<p>Linux调度的总体思想是：实时进程优先于普通进程，实时进程以进程的紧急程度为优先顺序，并为实时进程赋予固定的优先级；普通进程则以保证所有进程能平均占用处理器时间为原则。所以其具体做法就是：</p>
+<ul>
+<li>对于实时进程来说，总的思想是为实时进程赋予远大于普通进程的固定权重参数weight，以确保实时进程的优先级。在此基础上，还分为两种做法：一种与时间片无关，另一种与时间片有关；</li>
+<li>对于普通进程来说，原则上以相等的weight作为所有进程的初始权重值，即nice=0，然后在每次进行进程调度时，根据剩余时间片对weight动态调整。</li>
+</ul>
+<h5 id="例题日志分析用到的shell命令">例题：日志分析用到的shell命令</h5>
+<p><a href="https://blog.csdn.net/wufaliang003/article/details/86682250">CSDN上的一个总结博客</a></p>
+<h5 id="例题linux地址管理分段分页">例题：Linux地址管理，分段，分页</h5>
+<h3 id="5-网络">5. 网络</h3>
+<h4 id="ip报文分片">IP报文分片</h4>
+<h4 id="tcp的三次握手四次挥手">TCP的三次握手四次挥手</h4>
+<p>三次握手：Client-send SYN；Server-send SYN+ACK；Client-send SYN+ACK</p>
+<p>四次挥手：Client-send FIN；Server-send ACK；Client-send FIN；Server-send ACK；</p>
+<figure data-type="image" tabindex="1"><img src="https://img-blog.csdn.net/20180307175202844?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2hlbGRvbjE3OA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></figure>
+<p>LISTEN：侦听来自远方TCP端口的连接请求；<br>
+SYN-SENT：在发送连接请求后等待匹配的连接请求；<br>
+SYN-RECEIVED：在收到和发送一个连接请求后等待对连接请求的确认；<br>
+ESTABLISHED：代表一个打开的连接，数据可以传送给用户；<br>
+FIN-WAIT-1：等待远程TCP的连接中断请求，或先前的连接中断请求的确认；<br>
+FIN-WAIT-2：从远程TCP等待连接中断请求；<br>
+CLOSE-WAIT：等待从本地用户发来的连接中断请求；<br>
+CLOSING：等待远程TCP对连接中断的确认；<br>
+LAST-ACK： 等待原来发向远程TCP的连接中断请求的确认；<br>
+TIME-WAIT：等待足够的时间以确保远程TCP接收到连接中断请求的确认；<br>
+CLOSED ： 连接已经关闭的状态；</p>
+<h5 id="例题tcp连接半关闭建立连接过程中的socket函数">例题：TCP连接半关闭，建立连接过程中的socket函数</h5>
+<p><a href="https://www.cnblogs.com/f-ck-need-u/p/7623252.html">不可不知的socket和TCP连接过程</a></p>
+<h5 id="例题tcp头部数据里都有什么标志位都有哪些">例题：TCP头部数据里都有什么？标志位都有哪些？</h5>
+<h5 id="例题udp为什么比tcp快体现在哪些方面">例题：UDP为什么比TCP快？体现在哪些方面？</h5>
+<h4 id="http10与11与https">HTTP1.0与1.1与HTTPS</h4>
+<h5 id="例题https的加密过程">例题：HTTPS的加密过程</h5>
+<h5 id="例题在搜索框输入域名到页面显示期间发生了什么">例题：在搜索框输入域名到页面显示期间发生了什么</h5>
+<h5 id="例题rap和dns">例题：RAP和DNS</h5>
+<h3 id="6-算法">6. 算法</h3>
+<h4 id="递归">递归</h4>
+<p>观察递归树，很明显发现了算法低效的原因：存在大量重复计算，比如 f(18) 被计算了两次，而且你可以看到，以 f(18) 为根的这个递归树体量巨大，多算一遍，会耗费巨大的时间。更何况，还不止 f(18) 这一个节点被重复计算，所以这个算法及其低效。</p>
+<h5 id="例题二叉树深度-斐波那契数列">例题：二叉树深度、斐波那契数列</h5>
+<blockquote>
+<p>int fib(int N){</p>
+<p>​	if (N == 1 || N == 2) {</p>
+<p>​		return 1;</p>
+<p>​	}</p>
+<p>​	return fib(N-1)+fib(N-2);</p>
+<p>}</p>
+</blockquote>
+<p>明确了问题，其实就已经把问题解决了一半。即然耗时的原因是重复计算，那么我们可以造一个「备忘录」，每次算出某个子问题的答案后别急着返回，先记到「备忘录」里再返回；每次遇到一个子问题先去「备忘录」里查一查，如果发现之前已经解决过这个问题了，直接把答案拿出来用，不要再耗时去计算了。<br>
+一般使用一个数组充当这个「备忘录」，当然你也可以使用哈希表（字典），思想都是一样的。</p>
+<blockquote>
+<p>int fib(int N) {</p>
+<p>​	 if (N &lt; 1) return 0;<br>
+// 备忘录全初始化为 0<br>
+​	 vector<int> memo(N + 1, 0);<br>
+​	 return helper(memo, N);<br>
+}<br>
+int helper(vector<int>&amp; memo, int n) {<br>
+​	 if (n == 1 || n == 2) return 1;<br>
+​	 if (memo[n] != 0) return memo[n];<br>
+// 未被计算过<br>
+​	 memo[n] = helper(memo, n - 1) + helper(memo, n - 2);<br>
+return memo[n];<br>
+}</p>
+</blockquote>
+<h4 id="动态规划">动态规划</h4>
+<p><strong>递归的暴力解法 -&gt; 带备忘录的递归解法 -&gt; 非递归的动态规划解法</strong></p>
+<p>https://leetcode-cn.com/problems/coin-change/solution/dong-tai-gui-hua-tao-lu-xiang-jie-by-wei-lai-bu-ke/</p>
+<h5 id="例题暑假作业-凑硬币">例题：暑假作业、凑硬币</h5>
+<h4 id="二分法">二分法</h4>
+<h5 id="例题希尔排序-快排">例题：希尔排序、快排</h5>
+<h4 id="深度优先搜索">深度优先搜索</h4>
+<h5 id="例题滑雪问题">例题：滑雪问题</h5>
+<h4 id="广度优先搜索">广度优先搜索</h4>
+<h5 id="例题不晓得">例题：不晓得</h5>
+<h4 id="堆的使用">堆的使用</h4>
+<h5 id="例题高频词topk-frequentword-堆排序">例题：高频词（TopK frequentword）、堆排序</h5>
+<h3 id="7-数据库">7. 数据库</h3>
+<h4 id="sql与nosql的区别mysql又是什么">SQL与NoSQL的区别，MySQL又是什么</h4>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#title-%E4%B8%80%E4%BA%9B%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E5%92%8C%E7%AD%94%E6%A1%88date-2019-11-16-231010categories-%E4%B8%93%E4%B8%9Atags-%E6%9D%82%E8%B0%88toc-true">title: 一些常见面试题和答案<br>
+date: 2019-11-16 23:10:10<br>
+categories: 专业<br>
+tags: 杂谈<br>
+toc: true</a>
+<ul>
+<li><a href="#1-%E8%8C%B4%E5%AD%97%E6%9C%89%E5%87%A0%E7%A7%8D%E5%86%99%E6%B3%95%E6%8E%92%E5%BA%8F%E5%95%A6%E6%98%AF%E6%8E%92%E5%BA%8F">1. 茴字有几种写法（排序啦是排序</a><br>
+*
+<ul>
+<li><a href="#%E4%BE%8B%E9%A2%98%E5%86%92%E6%B3%A1">例题：冒泡</a></li>
+<li><a href="#%E4%BE%8B%E9%A2%98%E5%BF%AB%E6%8E%92%E5%AE%9E%E7%8E%B0">例题：快排实现</a></li>
+</ul>
+</li>
+<li><a href="#2-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84">2. 数据结构</a><br>
+*
+<ul>
+<li><a href="#%E4%BE%8B%E9%A2%98-c%E4%B8%AD%E7%9A%84%E5%AE%B9%E5%99%A8%E9%83%BD%E6%9C%89%E5%93%AA%E4%BA%9Bmap%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E7%BA%A2%E9%BB%91%E6%A0%91%E6%98%AF%E4%BB%80%E4%B9%88">例题： C++中的容器都有哪些？map如何实现？红黑树是什么？</a></li>
+<li><a href="#%E6%95%B0%E7%BB%84-%E9%93%BE%E8%A1%A8%E5%92%8C%E5%88%97%E8%A1%A8">数组、链表和列表</a>
+<ul>
+<li><a href="#%E4%BE%8B%E9%A2%98%E5%8F%8D%E8%BD%AC%E6%95%B0%E7%BB%84%E9%93%BE%E8%A1%A8">例题：反转数组/链表</a></li>
+</ul>
+</li>
+<li><a href="#%E6%A0%88stack-%E5%A0%86heap%E5%92%8C%E9%98%9F%E5%88%97queue">栈stack、堆heap和队列queue</a>
+<ul>
+<li><a href="#%E4%BE%8B%E9%A2%98%E6%8B%AC%E5%8F%B7%E5%8C%B9%E9%85%8D%E6%A0%88%E7%9A%84%E5%BA%94%E7%94%A8%E5%A0%86%E6%8E%92%E5%BA%8F%E5%A0%86%E7%9A%84%E5%BA%94%E7%94%A8">例题：括号匹配（栈的应用），堆排序（堆的应用），</a></li>
+<li><a href="#%E4%BE%8B%E9%A2%98%E4%B8%A4%E4%B8%AA%E6%A0%88%E5%81%9A%E4%B8%80%E4%B8%AA%E9%98%9F%E5%88%97">例题：两个栈做一个队列</a></li>
+<li><a href="#%E4%BE%8B%E9%A2%98%E4%B8%A4%E4%B8%AA%E9%98%9F%E5%88%97%E5%81%9A%E4%B8%80%E4%B8%AA%E6%A0%88">例题：两个队列做一个栈</a></li>
+</ul>
+</li>
+<li><a href="#%E6%A0%91-%E4%BA%8C%E5%8F%89%E6%A0%91-%E7%BA%A2%E9%BB%91%E6%A0%91-%E6%90%9C%E7%B4%A2%E6%A0%91">树、二叉树、红黑树、搜索树</a></li>
+<li><a href="#%E5%93%88%E5%B8%8C%E8%A1%A8hashmap%E7%9A%84%E5%8E%9F%E7%90%86">哈希表hashmap的原理</a>
+<ul>
+<li><a href="#%E4%BE%8B%E9%A2%98two-sum">例题：Two Sum</a></li>
+<li><a href="#%E4%BE%8B%E9%A2%98lru%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6">例题：LRU缓存机制</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#3-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80">3. 编程基础</a>
+<ul>
+<li><a href="#%E6%A6%82%E5%BF%B5%E8%BE%A8%E6%9E%90">概念辨析</a>
+<ul>
+<li><a href="#%E5%A4%9A%E6%80%81%E7%B1%BB%E7%9A%84%E5%A4%9A%E6%80%81%E5%92%8C%E5%87%BD%E6%95%B0%E7%9A%84%E5%A4%9A%E6%80%81">多态：类的多态和函数的多态</a></li>
+<li><a href="#%E5%B0%81%E8%A3%85">封装：</a></li>
+<li><a href="#%E9%87%8D%E8%BD%BD%E5%92%8C%E9%87%8D%E5%86%99">重载和重写：</a></li>
+<li><a href="#%E8%99%9A%E5%87%BD%E6%95%B0">虚函数：</a></li>
+<li><a href="#%E7%BB%A7%E6%89%BF%E6%B4%BE%E7%94%9F">继承派生：</a></li>
+<li><a href="#%E9%97%AD%E5%8C%85-%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6">闭包、垃圾回收：</a></li>
+<li><a href="#%E4%BE%8B%E9%A2%98%E5%A4%9A%E9%9B%86%E6%88%90%E4%B8%AD%E6%B4%BE%E7%94%9F%E7%B1%BB%E5%AF%B9%E8%B1%A1%E7%BB%93%E6%9E%84">例题：多集成中派生类对象结构</a></li>
+<li><a href="#%E4%BE%8B%E9%A2%98%E8%99%9A%E5%87%BD%E6%95%B0%E8%A1%A8%E6%9E%84%E6%88%90">例题：虚函数表构成</a></li>
+<li><a href="#%E4%BE%8B%E9%A2%98%E8%99%9A%E5%87%BD%E6%95%B0%E5%AE%9E%E7%8E%B0%E5%A4%9A%E6%80%81%E7%9A%84%E5%8E%9F%E7%90%86">例题：虚函数实现多态的原理</a></li>
+<li><a href="#%E4%BE%8B%E9%A2%98%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%8F%AF%E4%BB%A5%E5%AE%9A%E4%B9%89%E4%B8%BA%E7%A7%81%E6%9C%89%E5%90%97">例题：构造函数可以定义为私有吗？</a></li>
+</ul>
+</li>
+<li><a href="#%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E7%9A%84%E5%8C%BA%E5%88%AB">编程语言的区别</a>
+<ul>
+<li><a href="#javaccscala">JAVA/C/C++/SCALA</a></li>
+<li><a href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B%E4%B8%8E%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B">面向对象编程与函数式编程</a></li>
+<li><a href="#%E4%BE%8B%E9%A2%98-c%E5%BC%B1%E6%8C%87%E9%92%88%E6%99%BA%E8%83%BD%E6%8C%87%E9%92%88weak_ptr">例题： C++弱指针，智能指针weak_ptr</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#4-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F">4. 操作系统</a>
+<ul>
+<li><a href="#%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B%E4%B8%80%E4%B8%AA%E8%BF%9B%E7%A8%8B%E5%8F%AF%E8%83%BD%E5%8C%85%E6%8B%AC%E5%A4%9A%E4%B8%AA%E7%BA%BF%E7%A8%8B">进程和线程：一个进程可能包括多个线程</a></li>
+<li><a href="#%E8%BF%9B%E7%A8%8B%E4%B9%8B%E9%97%B4%E9%80%9A%E4%BF%A1">进程之间通信：</a>
+<ul>
+<li><a href="#%E4%BE%8B%E9%A2%98%E7%BA%BF%E7%A8%8B%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%BA%92%E6%96%A5%E7%BA%BF%E7%A8%8B%E6%B1%A0%E6%80%8E%E4%B9%88%E5%88%9B%E5%BB%BA%E6%9C%89%E5%87%A0%E4%B8%AA%E7%BA%BF%E7%A8%8B%E9%83%BD%E6%89%A7%E8%A1%8C%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0%E5%90%97">例题：线程如何创建？如何实现互斥？线程池怎么创建？有几个线程？都执行一个函数吗？</a></li>
+<li><a href="#%E4%BE%8B%E9%A2%98%E5%9C%A8windows%E7%9A%84%E4%B8%80%E4%B8%AA%E7%A3%81%E7%9B%98%E4%B8%8B%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9%E7%9A%84%E7%B3%BB%E7%BB%9F%E6%93%8D%E4%BD%9C%E8%BF%87%E7%A8%8B">例题：在Windows的一个磁盘下新建文件夹的系统操作过程</a></li>
+<li><a href="#%E4%BE%8B%E9%A2%98%E5%9C%A8linux%E7%B3%BB%E7%BB%9F%E4%B8%AD%E5%A6%82%E6%9E%9C%E5%B7%B2%E7%9F%A5%E4%B8%80%E4%B8%AA%E8%BF%9B%E7%A8%8B%E5%90%8D%E6%80%8E%E4%B9%88%E8%BE%93%E5%87%BApid%E5%8F%B7-ps%E5%92%8Ctop%E5%91%BD%E4%BB%A4">例题：在Linux系统中如果已知一个进程名，怎么输出PID号？ （ps和top命令？</a></li>
+<li><a href="#%E4%BE%8B%E9%A2%98linux%E7%9A%84%E8%BF%9B%E7%A8%8B%E8%B0%83%E5%BA%A6">例题：Linux的进程调度</a></li>
+<li><a href="#%E4%BE%8B%E9%A2%98%E6%97%A5%E5%BF%97%E5%88%86%E6%9E%90%E7%94%A8%E5%88%B0%E7%9A%84shell%E5%91%BD%E4%BB%A4">例题：日志分析用到的shell命令</a></li>
+<li><a href="#%E4%BE%8B%E9%A2%98linux%E5%9C%B0%E5%9D%80%E7%AE%A1%E7%90%86%E5%88%86%E6%AE%B5%E5%88%86%E9%A1%B5">例题：Linux地址管理，分段，分页</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#5-%E7%BD%91%E7%BB%9C">5. 网络</a>
+<ul>
+<li><a href="#ip%E6%8A%A5%E6%96%87%E5%88%86%E7%89%87">IP报文分片</a></li>
+<li><a href="#tcp%E7%9A%84%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B">TCP的三次握手四次挥手</a>
+<ul>
+<li><a href="#%E4%BE%8B%E9%A2%98tcp%E8%BF%9E%E6%8E%A5%E5%8D%8A%E5%85%B3%E9%97%AD%E5%BB%BA%E7%AB%8B%E8%BF%9E%E6%8E%A5%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84socket%E5%87%BD%E6%95%B0">例题：TCP连接半关闭，建立连接过程中的socket函数</a></li>
+<li><a href="#%E4%BE%8B%E9%A2%98tcp%E5%A4%B4%E9%83%A8%E6%95%B0%E6%8D%AE%E9%87%8C%E9%83%BD%E6%9C%89%E4%BB%80%E4%B9%88%E6%A0%87%E5%BF%97%E4%BD%8D%E9%83%BD%E6%9C%89%E5%93%AA%E4%BA%9B">例题：TCP头部数据里都有什么？标志位都有哪些？</a></li>
+<li><a href="#%E4%BE%8B%E9%A2%98udp%E4%B8%BA%E4%BB%80%E4%B9%88%E6%AF%94tcp%E5%BF%AB%E4%BD%93%E7%8E%B0%E5%9C%A8%E5%93%AA%E4%BA%9B%E6%96%B9%E9%9D%A2">例题：UDP为什么比TCP快？体现在哪些方面？</a></li>
+</ul>
+</li>
+<li><a href="#http10%E4%B8%8E11%E4%B8%8Ehttps">HTTP1.0与1.1与HTTPS</a>
+<ul>
+<li><a href="#%E4%BE%8B%E9%A2%98https%E7%9A%84%E5%8A%A0%E5%AF%86%E8%BF%87%E7%A8%8B">例题：HTTPS的加密过程</a></li>
+<li><a href="#%E4%BE%8B%E9%A2%98%E5%9C%A8%E6%90%9C%E7%B4%A2%E6%A1%86%E8%BE%93%E5%85%A5%E5%9F%9F%E5%90%8D%E5%88%B0%E9%A1%B5%E9%9D%A2%E6%98%BE%E7%A4%BA%E6%9C%9F%E9%97%B4%E5%8F%91%E7%94%9F%E4%BA%86%E4%BB%80%E4%B9%88">例题：在搜索框输入域名到页面显示期间发生了什么</a></li>
+<li><a href="#%E4%BE%8B%E9%A2%98rap%E5%92%8Cdns">例题：RAP和DNS</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#6-%E7%AE%97%E6%B3%95">6. 算法</a>
+<ul>
+<li><a href="#%E9%80%92%E5%BD%92">递归</a>
+<ul>
+<li><a href="#%E4%BE%8B%E9%A2%98%E4%BA%8C%E5%8F%89%E6%A0%91%E6%B7%B1%E5%BA%A6-%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97">例题：二叉树深度、斐波那契数列</a></li>
+</ul>
+</li>
+<li><a href="#%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92">动态规划</a>
+<ul>
+<li><a href="#%E4%BE%8B%E9%A2%98%E6%9A%91%E5%81%87%E4%BD%9C%E4%B8%9A-%E5%87%91%E7%A1%AC%E5%B8%81">例题：暑假作业、凑硬币</a></li>
+</ul>
+</li>
+<li><a href="#%E4%BA%8C%E5%88%86%E6%B3%95">二分法</a>
+<ul>
+<li><a href="#%E4%BE%8B%E9%A2%98%E5%B8%8C%E5%B0%94%E6%8E%92%E5%BA%8F-%E5%BF%AB%E6%8E%92">例题：希尔排序、快排</a></li>
+</ul>
+</li>
+<li><a href="#%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2">深度优先搜索</a>
+<ul>
+<li><a href="#%E4%BE%8B%E9%A2%98%E6%BB%91%E9%9B%AA%E9%97%AE%E9%A2%98">例题：滑雪问题</a></li>
+</ul>
+</li>
+<li><a href="#%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2">广度优先搜索</a>
+<ul>
+<li><a href="#%E4%BE%8B%E9%A2%98%E4%B8%8D%E6%99%93%E5%BE%97">例题：不晓得</a></li>
+</ul>
+</li>
+<li><a href="#%E5%A0%86%E7%9A%84%E4%BD%BF%E7%94%A8">堆的使用</a>
+<ul>
+<li><a href="#%E4%BE%8B%E9%A2%98%E9%AB%98%E9%A2%91%E8%AF%8Dtopk-frequentword-%E5%A0%86%E6%8E%92%E5%BA%8F">例题：高频词（TopK frequentword）、堆排序</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#7-%E6%95%B0%E6%8D%AE%E5%BA%93">7. 数据库</a>
+<ul>
+<li><a href="#sql%E4%B8%8Enosql%E7%9A%84%E5%8C%BA%E5%88%ABmysql%E5%8F%88%E6%98%AF%E4%BB%80%E4%B9%88">SQL与NoSQL的区别，MySQL又是什么</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://waningmay.github.io/post/hello-gridea">
+              <h3 class="post-title">
+                Hello Gridea
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '',
+    clientSecret: '',
+    repo: '',
+    owner: '',
+    admin: [''],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
+  <a class="rss" href="https://waningmay.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+
+  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+  // This should probably be throttled.
+  // Especially because it triggers during smooth scrolling.
+  // https://lodash.com/docs/4.17.10#throttle
+  // You could do like...
+  // window.addEventListener("scroll", () => {
+  //    _.throttle(doThatStuff, 100);
+  // });
+  // Only not doing it here to keep this Pen dependency-free.
+
+  window.addEventListener("scroll", event => {
+    let fromTop = window.scrollY;
+
+    mainNavLinks.forEach((link, index) => {
+      let section = document.getElementById(decodeURI(link.hash).substring(1));
+      let nextSection = null
+      if (mainNavLinks[index + 1]) {
+        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+      }
+      if (section.offsetTop <= fromTop) {
+        if (nextSection) {
+          if (nextSection.offsetTop > fromTop) {
+            link.classList.add("current");
+          } else {
+            link.classList.remove("current");    
+          }
+        } else {
+          link.classList.add("current");
+        }
+      } else {
+        link.classList.remove("current");
+      }
+    });
+  });
+
+</script>
+
+      </div>
+    </div>
+  </body>
+</html>
