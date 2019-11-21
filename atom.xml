@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://waningmay.github.io</id>
     <title>LAVENDER</title>
-    <updated>2019-11-21T10:23:04.134Z</updated>
+    <updated>2019-11-21T10:26:44.767Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://waningmay.github.io"/>
     <link rel="self" href="https://waningmay.github.io/atom.xml"/>
@@ -16,26 +16,14 @@
         <link href="https://waningmay.github.io/post/yi-xie-chang-jian-mian-shi-ti-he-da-an">
         </link>
         <updated>2019-11-21T10:19:07.000Z</updated>
-        <summary type="html"><![CDATA[<hr>
-<h2 id="title-一些常见面试题和答案date-2019-11-16-231010categories-专业tags-杂谈toc-true">title: 一些常见面试题和答案<br>
-date: 2019-11-16 23:10:10<br>
-categories: 专业<br>
-tags: 杂谈<br>
-toc: true</h2>
-<blockquote>
-<p>本文献给跟我一样虽然屁都不会但是谜一样的自信地投了软开岗位的旁友们</p>
-<p>希望我们都能获得尘世间的幸福</p>
+        <summary type="html"><![CDATA[<blockquote>
+<p>本文献给跟我一样虽然屁都不会但是谜一样的自信地投了软开岗位的旁友们<br>
+希望我们都能获得尘世间的幸福</p>
 </blockquote>
 ]]></summary>
-        <content type="html"><![CDATA[<hr>
-<h2 id="title-一些常见面试题和答案date-2019-11-16-231010categories-专业tags-杂谈toc-true">title: 一些常见面试题和答案<br>
-date: 2019-11-16 23:10:10<br>
-categories: 专业<br>
-tags: 杂谈<br>
-toc: true</h2>
-<blockquote>
-<p>本文献给跟我一样虽然屁都不会但是谜一样的自信地投了软开岗位的旁友们</p>
-<p>希望我们都能获得尘世间的幸福</p>
+        <content type="html"><![CDATA[<blockquote>
+<p>本文献给跟我一样虽然屁都不会但是谜一样的自信地投了软开岗位的旁友们<br>
+希望我们都能获得尘世间的幸福</p>
 </blockquote>
 ]]></content>
     </entry>
